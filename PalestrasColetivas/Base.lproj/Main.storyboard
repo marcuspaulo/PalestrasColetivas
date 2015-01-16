@@ -79,7 +79,7 @@
                                             <outlet property="diaEventoLabel" destination="On7-NU-SCe" id="SSx-yp-1bX"/>
                                             <outlet property="mesEventoLabel" destination="kFx-MM-8Ul" id="IdH-SZ-bi4"/>
                                             <outlet property="nomeEventoLabel" destination="aUk-fE-J1H" id="mEd-PJ-UGc"/>
-                                            <segue destination="LIb-MZ-IAW" kind="showDetail" id="Ed1-A1-l4d"/>
+                                            <segue destination="LIb-MZ-IAW" kind="showDetail" identifier="SegueDetalheEvento" id="Ed1-A1-l4d"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="954" y="39"/>
         </scene>
-        <!--View Controller-->
+        <!--Detalhe Evento View Controller-->
         <scene sceneID="Lc4-JQ-cxs">
             <objects>
-                <viewController id="LIb-MZ-IAW" sceneMemberID="viewController">
+                <viewController id="LIb-MZ-IAW" customClass="DetalheEventoViewController" customModule="PalestrasColetivas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BR0-fm-VHa"/>
                         <viewControllerLayoutGuide type="bottom" id="vtU-0Y-myp"/>
@@ -117,12 +117,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detalhes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBm-rM-itf">
-                                <rect key="frame" x="279" y="138" width="67" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fRi-D6-hti">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
@@ -135,12 +129,36 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTi-0y-kJ0">
+                                <rect key="frame" x="16" y="112" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Data Início" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61B-BQ-zxG">
+                                <rect key="frame" x="16" y="141" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descrição" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEb-ap-6DC">
+                                <rect key="frame" x="16" y="201" width="568" height="146"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="fRi-D6-hti" firstAttribute="top" secondItem="BR0-fm-VHa" secondAttribute="bottom" id="eJa-Uu-Roc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dataInicioLabel" destination="61B-BQ-zxG" id="zgl-bB-NN8"/>
+                        <outlet property="descricaoLabel" destination="EEb-ap-6DC" id="zCs-Qe-wLp"/>
+                        <outlet property="nomeLabel" destination="QTi-0y-kJ0" id="6g0-lO-qg9"/>
+                        <outlet property="tituloDetalheEventoLabel" destination="KlO-5b-MBB" id="kzo-vQ-hCO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AlU-Um-coW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

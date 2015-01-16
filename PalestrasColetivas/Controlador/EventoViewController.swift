@@ -101,5 +101,14 @@ class EventoViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         return cell;
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 
+        if segue.identifier == "SegueDetalheEvento" {
+            let detalheEventoViewController = segue.destinationViewController as DetalheEventoViewController
+            let indexPath = self.tableView.indexPathForSelectedRow();
+            detalheEventoViewController.evento = self.eventos[indexPath!.row]
+            
+        }
+    }
 }
