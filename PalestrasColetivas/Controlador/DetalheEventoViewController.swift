@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class DetalheEventoViewController: UIViewController {
     
@@ -18,6 +19,9 @@ class DetalheEventoViewController: UIViewController {
     @IBOutlet weak var descricaoTextView: UITextView!
     @IBOutlet weak var dataInicioLabel: UILabel!
     
+    @IBOutlet weak var enderecoLabel: UILabel!
+    @IBOutlet weak var mapa: MKMapView!
+    
     override func viewDidLoad() {
         println(evento.name);
         
@@ -25,6 +29,7 @@ class DetalheEventoViewController: UIViewController {
         nomeLabel.text = evento.name;
         descricaoTextView.text = evento.description;
         dataInicioLabel.text = evento.day;
+        enderecoLabel.text = evento.street;
         
     }
 
