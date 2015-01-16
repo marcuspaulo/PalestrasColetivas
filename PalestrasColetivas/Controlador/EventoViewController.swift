@@ -79,16 +79,6 @@ class EventoViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
-    func testarListaEventos() {
-        for evento in eventos {
-            println("----- Início Evento ------")
-            println("Nome: " + evento.name)
-            println("Edição: " + evento.edition)
-            
-            println("----- FIM Evento ------")
-        }
-    }
-    
     func limparAtributos(){
         eventos = [Evento]()
         self.evento = Evento()
@@ -101,11 +91,9 @@ class EventoViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        println( "TEXTE")
-        //        carregarEventos()
+        
         var cell = tableView.dequeueReusableCellWithIdentifier("CELL", forIndexPath: indexPath) as EventoCustomTableViewCell;
-        println("EVENTO ----> " + self.eventos[indexPath.row].name)
-        println("DIA ----> " + self.eventos[indexPath.row].day)
+
         cell.nomeEventoLabel.text = self.eventos[indexPath.row].name;
         cell.diaEventoLabel.text = self.eventos[indexPath.row].day;
         cell.mesEventoLabel.text = self.eventos[indexPath.row].month;
