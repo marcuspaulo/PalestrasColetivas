@@ -25,6 +25,8 @@ class EventoViewController: UIViewController, UITableViewDelegate, UITableViewDa
     {
         super.viewDidLoad()
         
+        limparAtributos();
+        
         carregarEventos();
         
         self.refreshControl = UIRefreshControl()

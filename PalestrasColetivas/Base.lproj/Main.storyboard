@@ -46,23 +46,33 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="/" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuO-jd-PsU">
-                                                    <rect key="frame" x="33" y="69" width="6" height="21"/>
+                                                    <rect key="frame" x="33" y="72" width="6" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="/" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNH-SA-m85">
-                                                    <rect key="frame" x="75" y="69" width="6" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="/" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNH-SA-m85">
+                                                    <rect key="frame" x="75" y="70" width="6" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Evento" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUk-fE-J1H">
-                                                    <rect key="frame" x="8" y="22" width="428" height="21"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evento" lineBreakMode="tailTruncation" numberOfLines="3" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aUk-fE-J1H">
+                                                    <rect key="frame" x="8" y="9" width="551" height="55"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="55" id="ItE-Yi-KQy"/>
+                                                        <constraint firstAttribute="width" constant="551" id="PqH-NQ-KRG"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="aUk-fE-J1H" firstAttribute="trailing" secondItem="XaA-rZ-k4W" secondAttribute="trailingMargin" id="BTc-Gk-UsB"/>
+                                                <constraint firstItem="aUk-fE-J1H" firstAttribute="top" secondItem="XaA-rZ-k4W" secondAttribute="topMargin" constant="1" id="Idk-bp-ZNP"/>
+                                                <constraint firstItem="aUk-fE-J1H" firstAttribute="leading" secondItem="XaA-rZ-k4W" secondAttribute="leadingMargin" id="dFB-j1-ntl"/>
+                                                <constraint firstItem="qNH-SA-m85" firstAttribute="top" secondItem="aUk-fE-J1H" secondAttribute="bottom" constant="6" id="r0f-I4-PHK"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="anoEventoLabel" destination="l5o-Ck-Gff" id="a4M-cJ-9wE"/>
@@ -93,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dfn-0N-i4c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="954" y="43"/>
+            <point key="canvasLocation" x="954" y="39"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Lc4-JQ-cxs">
