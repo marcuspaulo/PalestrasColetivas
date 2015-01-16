@@ -45,7 +45,15 @@ class EventoViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func carregarEventos() {
         
         Alamofire.request(.GET, "http://palestrascoletivas.com/events.json")
-            .responseJSON { (_, _, JSON, _) in
+            .responseJSON { (_, _, JSON, error) in
+                
+                println(error?.code)
+//                
+                if (error?.code == -1009) {
+                    SCLAlertView().showError("Falha na Conexão",
+                        subTitle:"Não é possível estabelecer uma conexão com o servidor. Tente novamente!", closeButtonTitle:"OK")
+
+                }
                 
                 if let jsonResult = JSON as? Array<Dictionary<String,String>> {
                     

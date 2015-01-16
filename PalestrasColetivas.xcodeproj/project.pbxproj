@@ -19,6 +19,7 @@
 		2C640D9D1A5C86AA00F0A1DA /* PalestrasColetivasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C640D9C1A5C86AA00F0A1DA /* PalestrasColetivasTests.swift */; };
 		2C640DB21A5C86EA00F0A1DA /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C640DAC1A5C86D200F0A1DA /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2C640DC71A5C895B00F0A1DA /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C640DC61A5C895B00F0A1DA /* Evento.swift */; };
+		2C70302D1A6914C8006EF96A /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7030161A6914C8006EF96A /* SCLAlertView.swift */; };
 		2CB7CBA31A68B9C70061E4A5 /* DetalheEventoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB7CBA21A68B9C70061E4A5 /* DetalheEventoViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -127,6 +128,7 @@
 		2C640DA61A5C86D200F0A1DA /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Library/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		2C640DB31A5C88DC00F0A1DA /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "Library/SwiftyJSON-master/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
 		2C640DC61A5C895B00F0A1DA /* Evento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Evento.swift; sourceTree = "<group>"; };
+		2C7030161A6914C8006EF96A /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
 		2CB7CBA21A68B9C70061E4A5 /* DetalheEventoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheEventoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -260,6 +262,7 @@
 		2C640DC21A5C88E500F0A1DA /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				2C7030131A6914C8006EF96A /* SCLAlertView-Swift-master */,
 				2C640DB31A5C88DC00F0A1DA /* SwiftyJSON.xcodeproj */,
 				2C640DA61A5C86D200F0A1DA /* Alamofire.xcodeproj */,
 			);
@@ -272,6 +275,23 @@
 				2C640DC61A5C895B00F0A1DA /* Evento.swift */,
 			);
 			path = Modelo;
+			sourceTree = "<group>";
+		};
+		2C7030131A6914C8006EF96A /* SCLAlertView-Swift-master */ = {
+			isa = PBXGroup;
+			children = (
+				2C7030151A6914C8006EF96A /* Classes */,
+			);
+			name = "SCLAlertView-Swift-master";
+			path = "Library/SCLAlertView-Swift-master";
+			sourceTree = "<group>";
+		};
+		2C7030151A6914C8006EF96A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2C7030161A6914C8006EF96A /* SCLAlertView.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,6 +462,7 @@
 			files = (
 				2C2A89201A5C9C990027C870 /* ViewController.swift in Sources */,
 				2C2A89241A5C9DF30027C870 /* EventoCustomTableViewCell.swift in Sources */,
+				2C70302D1A6914C8006EF96A /* SCLAlertView.swift in Sources */,
 				2C2A89221A5C9CAF0027C870 /* EventoViewController.swift in Sources */,
 				2C2A892E1A5CC1970027C870 /* DataUtil.swift in Sources */,
 				2CB7CBA31A68B9C70061E4A5 /* DetalheEventoViewController.swift in Sources */,

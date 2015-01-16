@@ -14,15 +14,16 @@ class DetalheEventoViewController: UIViewController {
     
     @IBOutlet weak var tituloDetalheEventoLabel: UINavigationItem!
     @IBOutlet weak var nomeLabel: UILabel!
-    @IBOutlet weak var descricaoLabel: UILabel!
     
+    @IBOutlet weak var descricaoTextView: UITextView!
     @IBOutlet weak var dataInicioLabel: UILabel!
+    
     override func viewDidLoad() {
         println(evento.name);
         
         tituloDetalheEventoLabel.title = evento.name;
         nomeLabel.text = evento.name;
-        descricaoLabel.text = evento.description;
+        descricaoTextView.text = evento.description;
         dataInicioLabel.text = evento.day;
         
     }
