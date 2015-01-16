@@ -22,15 +22,27 @@ class DetalheEventoViewController: UIViewController {
     @IBOutlet weak var enderecoLabel: UILabel!
     @IBOutlet weak var mapa: MKMapView!
     
+    @IBOutlet weak var tipoMapaSegmentedControl: UISegmentedControl!
+    
     override func viewDidLoad() {
         println(evento.name);
         
         tituloDetalheEventoLabel.title = evento.name;
-        nomeLabel.text = evento.name;
         descricaoTextView.text = evento.description;
         dataInicioLabel.text = evento.day;
         enderecoLabel.text = evento.street;
         
     }
 
+    @IBAction func selecionarTipoMapa(sender: AnyObject) {
+        println(tipoMapaSegmentedControl.selectedSegmentIndex)
+        
+        switch tipoMapaSegmentedControl.selectedSegmentIndex {
+        case 1: mapa.mapType = MKMapType.Satellite;
+        case 2: mapa.mapType = MKMapType.Hybrid;
+            
+        default: mapa.mapType = MKMapType.Standard;
+            
+        }
+    }
 }
