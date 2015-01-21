@@ -17,7 +17,10 @@ class EventoViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     var evento = Evento()
     var dataUtil = DataUtil();
-    
+        
+
+    @IBOutlet weak var titulo: UILabel!
+    @IBOutlet weak var subtitulo: UILabel!
     
     var refreshControl:UIRefreshControl!  // An optional variable
     
@@ -76,6 +79,10 @@ class EventoViewController: UIViewController, UITableViewDelegate, UITableViewDa
                         self.evento.month = self.dataUtil.extrairMes(self.evento.start_date);
                         self.evento.year = self.dataUtil.extrairAno(self.evento.start_date);
                         
+                        //Teste - Ajustar esse código
+                        self.evento.fullDate = self.evento.day + "/" + self.evento.month + "/" + self.evento.year
+                        
+                        
                         self.eventos.append(self.evento)
                     }
                     
@@ -99,15 +106,17 @@ class EventoViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell_ : UITableViewCell? = tableView.dequeueReusableCellWithIdentifier("CELL") as? UITableViewCell
+        if(cell_ == nil)
+        {
+            cell_ = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "CELL")
+        }
         
-        var cell = tableView.dequeueReusableCellWithIdentifier("CELL", forIndexPath: indexPath) as EventoCustomTableViewCell;
-
-        cell.nomeEventoLabel.text = self.eventos[indexPath.row].name;
-        cell.diaEventoLabel.text = self.eventos[indexPath.row].day;
-        cell.mesEventoLabel.text = self.eventos[indexPath.row].month;
-        cell.anoEventoLabel.text = self.eventos[indexPath.row].year;
+        cell_!.textLabel!.text = self.eventos[indexPath.row].name;
+        cell_!.detailTextLabel?.text = self.eventos[indexPath.row].fullDate;
         
-        return cell;
+        return cell_!
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

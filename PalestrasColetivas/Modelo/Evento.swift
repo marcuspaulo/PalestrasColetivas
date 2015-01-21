@@ -21,6 +21,7 @@ class Evento {
     var state : String = ""
     var edition : String = ""
     var description : String = ""
+    var fullDate : String = ""
     
     
 }

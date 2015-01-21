@@ -27,10 +27,10 @@ class DetalheEventoViewController: UIViewController {
     override func viewDidLoad() {
         println(evento.name);
         
-        tituloDetalheEventoLabel.title = evento.name;
-        descricaoTextView.text = evento.description;
-        dataInicioLabel.text = evento.day;
-        enderecoLabel.text = evento.street;
+        tituloDetalheEventoLabel.title = evento.name
+        descricaoTextView.text = evento.description
+        dataInicioLabel.text = evento.fullDate
+        enderecoLabel.text = evento.street
         
     }
 
