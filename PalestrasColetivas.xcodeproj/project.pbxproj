@@ -24,6 +24,7 @@
 		2C640DB21A5C86EA00F0A1DA /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C640DAC1A5C86D200F0A1DA /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2C640DC71A5C895B00F0A1DA /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C640DC61A5C895B00F0A1DA /* Evento.swift */; };
 		2C70302D1A6914C8006EF96A /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7030161A6914C8006EF96A /* SCLAlertView.swift */; };
+		2C7A054D1A707E4100D6DA4C /* palestras-coletivas.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A054C1A707E4100D6DA4C /* palestras-coletivas.png */; };
 		2CB7CBA31A68B9C70061E4A5 /* DetalheEventoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB7CBA21A68B9C70061E4A5 /* DetalheEventoViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -137,6 +138,7 @@
 		2C640DB31A5C88DC00F0A1DA /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "Library/SwiftyJSON-master/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
 		2C640DC61A5C895B00F0A1DA /* Evento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Evento.swift; sourceTree = "<group>"; };
 		2C7030161A6914C8006EF96A /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
+		2C7A054C1A707E4100D6DA4C /* palestras-coletivas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palestras-coletivas.png"; sourceTree = "<group>"; };
 		2CB7CBA21A68B9C70061E4A5 /* DetalheEventoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheEventoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,6 +174,7 @@
 		2C2A89291A5CB7020027C870 /* imagens */ = {
 			isa = PBXGroup;
 			children = (
+				2C7A054C1A707E4100D6DA4C /* palestras-coletivas.png */,
 				2C579C531A6F32AC000B3C38 /* descricao.png */,
 				2C579C551A6F3A58000B3C38 /* lateral-celula.png */,
 				2C579C511A6F3190000B3C38 /* calendario.png */,
@@ -453,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C640D8C1A5C86AA00F0A1DA /* Main.storyboard in Resources */,
+				2C7A054D1A707E4100D6DA4C /* palestras-coletivas.png in Resources */,
 				2C640D911A5C86AA00F0A1DA /* LaunchScreen.xib in Resources */,
 				2C640D8E1A5C86AA00F0A1DA /* Images.xcassets in Resources */,
 				2C579C441A6F2F91000B3C38 /* background-titulo-detalhe.png in Resources */,
